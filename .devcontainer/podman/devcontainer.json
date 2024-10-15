@@ -1,0 +1,39 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "ubi9",
+	"image": "registry.access.redhat.com/ubi9/ubi-init",
+	"containerUser": "root",
+	"runArgs": [
+		"--cap-add=CAP_MKNOD",
+		"--cap-add=NET_ADMIN",
+		"--cap-add=SYS_ADMIN",
+		"--cap-add=SYS_RESOURCE",
+		"--device",
+		"/dev/fuse",
+		"--security-opt",
+		"seccomp=unconfined",
+		"--security-opt",
+		"label=disable",
+		"--security-opt",
+		"apparmor=unconfined",
+		"--security-opt",
+		"unmask=/sys/fs/cgroup",
+		"--userns=host",
+		"--hostname=ansible-dev-container"
+	  ]
+
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
