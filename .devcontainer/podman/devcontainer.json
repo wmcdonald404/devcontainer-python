@@ -21,7 +21,10 @@
 		"unmask=/sys/fs/cgroup",
 		"--userns=host",
 		"--hostname=ansible-dev-container"
-	  ]
+	  ],
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
+	"updateContentCommand": ".devcontainer/bin/updateContentCommand.sh"
 
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	
