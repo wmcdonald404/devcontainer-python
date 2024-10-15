@@ -24,7 +24,7 @@
 	  ],
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
-	"updateContentCommand": ".devcontainer/bin/updateContentCommand.sh"
+	"updateContentCommand": ".devcontainer/bin/updateContentCommand.sh",
 
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	
@@ -35,7 +35,13 @@
 	// "forwardPorts": [],
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python"
+			]
+		}
+	  }
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
