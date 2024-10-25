@@ -1,14 +1,20 @@
 {
 	"name": "ubi9",
 	"image": "registry.access.redhat.com/ubi9/ubi-init",
-	  "runArgs": [
-		"--security-opt",
-		"label=disable",
+	"runArgs": [
+		"--security-opt", "label=disable",
 		"--hostname=python-dev-container"
-	  ]
-
-	// "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	// "onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
+	  ],
+	"onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
 	// "updateContentCommand": ".devcontainer/bin/updateContentCommand.sh",
-
+	"containerEnv": {
+		"OSH_THEME": "powerline"
+	},
+	"customizations": {
+			"vscode": {
+				"extensions": [
+					"ms-python.python"
+				]
+			}
+		}
 }
