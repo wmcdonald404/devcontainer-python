@@ -1,9 +1,9 @@
 {
-	"name": "ubi9",
-	"image": "registry.access.redhat.com/ubi9/ubi-init",
+	"name": "fedora",
+	"image": "registry.fedoraproject.org/fedora:41",
 	"runArgs": [
 		"--security-opt", "label=disable",
-		"--hostname=python-dev-container"
+		"--hostname=fedora.python"
 	  ],
 	"onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
 	// "updateContentCommand": ".devcontainer/bin/updateContentCommand.sh",

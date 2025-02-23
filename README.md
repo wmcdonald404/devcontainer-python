@@ -1,2 +1,2 @@
 # devcontainer-python
-Python devcontainer built on Podman and UBI.
+Python devcontainer built on Podman and Fedora.
