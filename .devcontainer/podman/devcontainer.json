@@ -8,7 +8,7 @@
 	"onCreateCommand": ".devcontainer/bin/onCreateCommand.sh",
 	// "updateContentCommand": ".devcontainer/bin/updateContentCommand.sh",
 	"containerEnv": {
-		"OSH_THEME": "powerline"
+		"OSH_THEME": "font"
 	},
 	"customizations": {
 			"vscode": {
